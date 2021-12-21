@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  
+  padding: 20px;
+}
+
+.navbar nav {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: darkolivegreen;
+  font-size: 1.3rem;
+}
+
+.navbarContainer {
+  max-width: 90%;
+  margin: auto;
+  padding: 0 50px;
+  border: crimson 1px solid;
+}
