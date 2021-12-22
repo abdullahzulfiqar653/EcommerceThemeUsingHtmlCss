@@ -3,11 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 
 .navbar {
   display: flex;
   align-items: center;
-  
+
   padding: 20px;
 }
 
@@ -33,4 +36,82 @@
   margin: auto;
   padding: 0 50px;
   border: crimson 1px solid;
+}
+
+/* Starting Hero Section 
+In the Navbar Container */
+
+.heroSection {
+  display: flex;
+  align-items: center;
+}
+
+.heroSection .left {
+  flex-basis: 50%;
+}
+
+.heroSection .right {
+  flex: 1;
+  text-align: right;
+}
+.right img {
+  width: 80%;
+  padding: 50px 0;
+}
+
+.left h1 {
+  font-size: 2rem;
+  line-height: 40px;
+  margin: 25px 0;
+}
+.heroSection .left p {
+  margin-bottom: 30px;
+}
+.heroSection .left a {
+  text-decoration: none;
+  background-color: #ff523b;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.heroSection .left a:hover {
+  color: white;
+}
+.heroSectionContainer {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.heroSectionContainer .heroSection {
+  margin-top: 55px;
+}
+
+/* Navbar hover Effect */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: rgb(26, 170, 74);
+}
+
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #ff523b;
+  height: 2px;
+}
+nav.stroke ul li a:hover:after {
+  width: 120%;
 }
