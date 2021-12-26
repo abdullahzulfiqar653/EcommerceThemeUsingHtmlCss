@@ -313,6 +313,84 @@ nav.stroke ul li a:hover:after {
   width: 80%;
   height: 80px;
   object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.mainContentContainer .brandsContainer .row .col-five img:hover {
+  filter: grayscale(0%);
 }
 
+/* ......................Footer Css ..................... */
+.footer {
+  background-color: black;
+}
 
+.footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .row .first h4 {
+  color: #fff;
+}
+
+.footer .row .first {
+  flex-basis: 25%;
+  color: lightgray;
+}
+.footer .row .first .app-icons {
+  display: flex;
+  margin-top: 10px;
+}
+.footer .row .first .app-icons img {
+  margin-right: 10px;
+  width: 30%;
+  object-fit: cover;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.footer .row .first .app-icons .img {
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.footer .row .second {
+  flex-basis: 21%;
+  text-align: center;
+  color: lightgray;
+}
+
+.footer .row .second img {
+  width: 40%;
+}
+.footer .row .third,
+.fourth {
+  flex-basis: 13%;
+  color: lightgray;
+  text-align: center;
+}
+.footer .row .third h4 {
+  color: #fff;
+}
+.footer .row .fourth h4 {
+  color: #fff;
+}
+.footer .row .third ul li {
+  list-style: none;
+}
+.footer .row .fourth ul li {
+  list-style: none;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 10px 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 10px;
+}
