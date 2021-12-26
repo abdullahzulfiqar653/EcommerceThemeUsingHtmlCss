@@ -292,3 +292,27 @@ nav.stroke ul li a:hover:after {
 }
 
 /* -- -------------- Brands Images Css Starting -------------- -- */
+.mainContentContainer .brandsContainer {
+  max-width: 100%;
+  border: #4169e1 1px solid;
+  margin: auto;
+}
+
+.mainContentContainer .brandsContainer .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 10px;
+}
+.mainContentContainer .brandsContainer .row .col-five {
+  flex-basis: 19%;
+  border: skyblue 1px solid;
+}
+
+.mainContentContainer .brandsContainer .row .col-five img {
+  width: 80%;
+  height: 80px;
+  object-fit: cover;
+}
+
+
