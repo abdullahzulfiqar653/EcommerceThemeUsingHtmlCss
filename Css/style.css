@@ -45,7 +45,7 @@ body {
   max-width: 90%;
   margin: auto;
   padding: 0 50px;
-  border: crimson 1px solid;
+  border: crimson 2px solid;
 }
 
 /* Starting Hero Section 
@@ -175,8 +175,9 @@ nav.stroke ul li a:hover:after {
 }
 .col-four {
   flex-basis: 23%;
-  /* margin: 1%; */
   border: rgb(20, 220, 210) 2px solid;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
 }
 
 .col-four img {
@@ -189,6 +190,7 @@ nav.stroke ul li a:hover:after {
   text-align: center;
   color: #560;
   position: relative;
+  margin: 20px 15px 0;
 }
 
 .titleProductsContainer::after {
@@ -201,3 +203,92 @@ nav.stroke ul li a:hover:after {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.col-four .rating {
+  color: blueviolet;
+}
+
+.col-four:hover {
+  transform: translateY(-5px);
+}
+
+/* --------------- Exclusive offer Section -------------- */
+.exclusiveProductSection {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: brown 3px solid;
+}
+
+.exclusiveProductSection .left {
+  flex-basis: 50%;
+}
+.exclusiveProductSection .left img {
+  width: 80%;
+  height: 500px;
+  padding: 50px 0;
+  object-fit: cover;
+}
+
+.exclusiveProductSection .right {
+  flex-basis: 50%;
+  width: 90%;
+}
+
+.exclusiveProductSection .right p {
+  margin-bottom: 30px;
+}
+
+.exclusiveProductSection .right a {
+  text-decoration: none;
+  background-color: #ff523b;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* -- -------------- Testimonial Css -------------- -- */
+.testimonialContainer {
+  max-width: 90%;
+  margin: auto;
+  border: black 1px solid;
+}
+.testimonialContainer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 40px 80px;
+}
+.testimonialContainer .row .col-three {
+  padding: 15px;
+  flex-basis: 23%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+.testimonialContainer .row .col-three:hover {
+  transform: translateY(-10px);
+}
+
+.testimonialContainer .row .col-three img {
+  width: 35%;
+  height: 80px;
+  margin: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonialContainer .row .col-three p {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.testimonialContainer .row .col-three h3 {
+  font-weight: 600;
+}
+
+/* -- -------------- Brands Images Css Starting -------------- -- */
